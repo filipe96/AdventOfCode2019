@@ -19,6 +19,5 @@ def main():
     for mass in getData():
         sum += recurisiveFuleCalc(int(mass))
     print(sum)
-    print(recurisiveFuleCalc(sum))
 
 main()
