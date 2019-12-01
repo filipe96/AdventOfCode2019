@@ -15,9 +15,7 @@ def recurisiveFuleCalc(fuel):
         return calc(fuel) + recurisiveFuleCalc(calc(fuel))
 
 def main():
-    sum = 0
-    for mass in getData():
-        sum += recurisiveFuleCalc(int(mass))
-    print(sum)
+    print(sum(calc(int(mass)) for mass in getData()))
+    print(sum(recurisiveFuleCalc(int(mass)) for mass in getData()))
 
 main()
